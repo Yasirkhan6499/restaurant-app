@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Banner -->
+    <header class="banner">
+      <h1 class="banner__heading">Yasir's Dinner</h1>
+      <p>The Best Burger's And Pizza's In Town</p>
+    </header>
+
+    <main>
+      <div class="items-container">
+        <!-- Items list -->
+      </div>
+      <div class="calculate-container">
+        <h2>Your Order</h2>
+        <div class="calculate__body">
+          <!-- calculate items -->
+        </div>
+        <div class="total item__cont">
+          <p class="total_price item__name">Total Price</p>
+          <p class="price item__price"></p>
+        </div>
+        <button class="btn btn--order">Complete Order</button>
+      </div>
+
+      <!-- card container -->
+      <div class="card_container">
+        <h2>Enter Card Details</h2>
+        <form class="card__form" action="">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Your Name"
+          />
+          <input
+            type="tel"
+            name=""
+            id=""
+            minlength="16"
+            maxlength="16"
+            placeholder="Enter Card Number"
+          />
+          <input
+            type="tel"
+            name=""
+            id=""
+            minlength="3"
+            maxlength="3"
+            placeholder="Enter CVV"
+          />
+          <button class="btn btn--pay" type="submit">Pay</button>
+        </form>
+      </div>
+
+      <!-- Thanks for the order -->
+      <div class="thanks-cont">
+        <p></p>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/e8ad5b69a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

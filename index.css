@@ -1,0 +1,197 @@
+/* ---General CSS */
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+
+    position: relative;
+}
+.btn{
+    cursor: pointer;
+}
+
+/* Header .. banner */
+.banner{
+    background-image: url("/images/banner.jpg");
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    padding: 2rem;
+    color: white;
+    text-align: right;
+}
+
+.banner h1{
+    font-size: max(3rem,2.8vw);
+}
+.banner p{
+    margin: -1rem 0 3rem;
+    font-size: max(1.3rem, 1.2vw);
+}
+
+/* Items */
+.item-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 3rem;
+    
+  
+
+}
+.item-container::after{
+    content: "";
+    position: absolute;
+    height: 2rem;
+    margin-top: 10rem;
+    width: 80%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+    margin-left: 10%;
+}
+
+.item-container:first-child{
+   margin-left: 1.4rem;
+}
+
+.item_icon_info{
+    display: flex;
+    gap: 2rem;
+}
+.item__icon{
+    font-size: 5.5rem;
+}
+.item__name{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.item__ingredients{
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
+    color: gray;
+}
+.item__price{
+    margin-top: 0.9rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.plus-sign{
+    border: 1px solid rgba(0, 0, 0, 0.244);
+    border-radius: 100%;
+    /* position: absolute;
+    right: 3rem;
+    top: 3rem; */
+    padding: 1rem;
+    cursor: pointer;
+    
+}
+
+/* -----calculate__body------- */
+
+.item__cont{
+display: flex;
+justify-content: space-between;
+padding: 2rem;
+
+}
+.calculate-container{
+    display: none;
+}
+.total::before{
+    content: "";
+    position: absolute;
+    height: 2rem;
+    margin-top: -3.4rem;
+    width: 80%;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.546);
+    margin-left: 10%;
+}
+.calculate-container h2{
+    text-align: center;
+    margin: 5rem auto 2rem;
+    
+}
+.btn__remove{
+    border: none;
+    background: transparent;
+    font-size: 1.3rem;
+    color: rgba(128, 128, 128, 0.626);
+    margin-left: -1.2rem;
+    cursor: pointer;
+}
+.total{
+    margin-top: 1rem;
+}
+.total::after{
+    border: none;
+}
+.btn--order{
+    background-color: #16DB99;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    border: none;
+    margin: 3rem 0;
+    border-radius: 5px;
+}
+
+/* -----Card details-------- */
+
+.card_container{
+    box-shadow: 2px -2px 2px rgba(0, 0, 0, 0.258);
+    padding: 3rem;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    z-index: 1;
+    text-align: center;
+    
+    width: 70%;
+    background-color: white;
+
+    display: none;
+
+}
+
+
+.card__form{
+    display: flex;
+    flex-direction: column;
+}
+.card__form input{
+    margin: 1rem;
+    padding: 1rem;
+}
+.card__form button{
+    padding: 1rem;
+    background-color: #16DB99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Thanks container */
+.thanks-cont{
+    
+
+    background-color: #ECFDF5;
+    padding: 3rem;
+    font-weight: 500;
+    margin: 2rem;
+    text-align: center;
+    color: #065F46;
+
+    display: none;
+}
+
+.show{
+    display: block; 
+}
